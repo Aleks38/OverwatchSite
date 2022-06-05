@@ -94,7 +94,7 @@
             </div>
         </div>
         <div class="card borderCardSoutien">
-            <a href="herosSoutien">
+            <a href="herosSoutien.php">
                 <img class="card-img-top" src="images/logo_soutien.png" alt="Card image cap">
             </a>
             <div class="card-body">

@@ -10,6 +10,7 @@
 <body>
     <?php
     include 'navbar.php';
+    include 'sqlConnect.php';
     $verif = FALSE; 
     $verifNbr = 0;
     ?>

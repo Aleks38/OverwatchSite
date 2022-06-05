@@ -19,8 +19,8 @@
           </button>
           <div class="dropdown-menu">
             <div class="form-group inputConnexion">
-                <label for="exampleDropdownFormEmail1">Adresse mail/Nom d'utilisateur</label>
-                <input type="text" class="form-control inputChamp" id="exampleDropdownFormEmail1" placeholder="email@exemple.fr" name="emailUsernameConnexion">
+                <label for="exampleDropdownFormEmail1">Adresse mail</label>
+                <input type="text" class="form-control inputChamp" id="exampleDropdownFormEmail1" placeholder="email@exemple.fr" name="emailConnexion">
             </div>
             <div class="form-group inputConnexion">
                 <label for="exampleDropdownFormPassword1">Mot de passe</label>
@@ -38,9 +38,9 @@
   </nav> 
   <?php
     include 'sqlConnect.php';
-      if (isset($_POST['emailUsernameConnexion']))
+      if (isset($_POST['emailConnexion']))
       {
-        $adresseVerif = $_POST['emailUsernameConnexion'];
+        $adresseVerif = $_POST['emailConnexion'];
         $sqlRequete1 = "SELECT * FROM utilisateur where adresseMail = '$adresseVerif'";
         $recipesStatement = $mysqlClient->prepare($sqlRequete1);
         $recipesStatement->execute();
@@ -48,7 +48,7 @@
         if(count($recipes) > 0){
           foreach ($recipes as $recepe)
           {
-            if(($_POST['emailUsernameConnexion'] == $recepe['adresseMail'] or $_POST['emailUsernameConnexion'] == $recepe['nomDUtilisateur']) and password_verify($_POST['passUtiConnexion'], $recepe['pass']))
+            if($_POST['emailConnexion'] == $recepe['adresseMail'] and password_verify($_POST['passUtiConnexion'], $recepe['pass']))
             {
               ?>
               <div class="col-10 mx-auto">
