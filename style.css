@@ -1,0 +1,99 @@
+#accordion{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 11rem;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logoOverwatchLettre{
+    text-align: center;
+}
+.logoOverwatchLettreTaille{
+    width: 31rem;
+    height: 8rem;
+}
+.btnLogo{
+    width: 2rem;
+    height: 2rem;
+    
+}
+.github, .twitter, .youtube, .web{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.github:hover, .twitter:hover, .youtube:hover, .web:hover{
+    filter: drop-shadow(1px 1px 1px rgb(245, 198, 127));
+
+}
+.descriptionCarte, .lienCarte{
+    font-size:12;
+    margin-bottom:0rem;
+}
+.lienCarte, .copyright{
+    color:#ffc107;
+}
+.lienCarte:hover{
+    color:black;
+    text-decoration: none;
+}
+.copyright:hover{
+    color:white;
+    text-decoration: none;
+}
+.inputChamp:focus{
+    border-color: #ffc107;
+    box-shadow: 0 1px 1px #ffc107 inset, 0 0 8px #ffc107;
+    outline: 0 none;
+}
+.inputConnexion{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#btnGroupDrop1{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.titreListe{
+    margin-top: 1rem;
+    font-family: Arial;
+}
+.dropdown-item:active{
+    background-color:#ffc107;
+    color:black;
+}
+.cardRoles{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.borderCardTank{
+    border-color: #f9a32c;
+}
+.borderCardDegat{
+    border-color: #e52128;
+}
+.borderCardSoutien{
+    border-color: #02a34a;
+}
+.papaJeff{
+   margin-top: 2rem;
+}
+.papaJeffImg, .winstonImg{
+    border-radius: 10%;
+}
+.winstonImg{
+    width: 25rem;
+    height: 14rem;
+}
+.carousel{
+    margin-bottom:2rem
+}
+.erreurConnexion{
+    color:red;
+    margin-top: 2rem;
+}
+.username{
+    margin-top: 2rem;
+}
