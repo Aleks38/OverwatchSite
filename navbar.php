@@ -6,7 +6,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item ">
-          <a class="nav-link btnNavbar" href="index.php">Accueille</a>
+          <a class="nav-link btnNavbar" href="index.php">Accueil</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link btnNavbar" href="heros.php">Héros</a>
