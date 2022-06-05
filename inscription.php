@@ -168,7 +168,7 @@
                 }
             }
             ?>
-            <button class="btn btn-outline-warning" type="submit" href="index.php"">Soumettre</button>
+            <button class="btn btn-outline-warning" type="submit" href="index.php">Soumettre</button>
             <?php
                 if($verifNbr == 7){
 

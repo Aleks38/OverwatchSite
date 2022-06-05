@@ -19,7 +19,7 @@
         </button>
         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
           <a class="dropdown-item" href="herosTank.php">Tank</a>
-          <a class="dropdown-item" href="herosDegat.php">Dégât</a>
+          <a class="dropdown-item" href="herosDegat.php">Dégâts</a>
           <a class="dropdown-item" href="herosSoutien.php">Soutien</a>
         </div>
       </div>
@@ -29,7 +29,7 @@
       <?php
         $incrementIdInt = 0;
         $incrementIdString = "card";
-        $sqlRequete1 = "SELECT name, path, description, lien FROM heros ORDER BY name";
+        $sqlRequete1 = "SELECT nomHero, chemin, description, lien FROM heros ORDER BY nomHero";
         $recipesStatement = $mysqlClient->prepare($sqlRequete1);
         $recipesStatement->execute();
         $recipes = $recipesStatement->fetchAll();
@@ -40,7 +40,7 @@
             <div class="card border-warning text-center">
               <div id="headingOne">
                 <a href="#<?php print_r($incrementIdString . strval($incrementIdInt)) ?>" data-toggle="collapse">
-                  <img class="card-img" src="<?php echo $recipe['path']; ?>" alt="Card image heros">  
+                  <img class="card-img" src="<?php echo $recipe['chemin']; ?>" alt="Card image heros">  
                 </a>
               </div>
   

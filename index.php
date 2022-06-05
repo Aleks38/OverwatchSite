@@ -88,7 +88,7 @@
                 <img class="card-img-top" src="images/logo_degat.png" alt="Card image cap">
             </a>
             <div class="card-body">
-                <h5 class="card-title text-center"><strong>DEGAT</strong></h5>
+                <h5 class="card-title text-center"><strong>DEGATS</strong></h5>
                 <p class="card-text">Les héros infligeant des dégâts traquent, attaquent et éliminent l’ennemi avec les outils, 
                     capacités et styles de jeu variés à leur disposition. Redoutables mais fragiles, ils ont besoin de renfort pour survivre.</p>
             </div>
