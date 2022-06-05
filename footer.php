@@ -21,7 +21,7 @@
       </a>
 
       <!-- Github -->
-      <a class="mx-auto" href="https://github.com/Aleks38" role="button" data-placement="top" title="Mon github">
+      <a class="mx-auto" href="https://github.com/Aleks38/OverwatchSite" role="button" data-placement="top" title="Mon github">
         <i><img class="btnLogo github" src="images/logo_github.PNG"></i>
       </a>
 
