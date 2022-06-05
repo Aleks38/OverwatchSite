@@ -35,27 +35,27 @@
         $recipes = $recipesStatement->fetchAll();
         foreach($recipes as $recipe)
         {
-            ?>
-            <div id="accordion">
-              <div class="card border-warning text-center">
-                <div id="headingOne">
-                  <a href="#<?php print_r($incrementIdString . strval($incrementIdInt)) ?>" data-toggle="collapse">
-                    <img class="card-img" src="<?php echo $recipe['path']; ?>" alt="Card image heros">  
-                  </a>
+          ?>
+          <div id="accordion">
+            <div class="card border-warning text-center">
+              <div id="headingOne">
+                <a href="#<?php print_r($incrementIdString . strval($incrementIdInt)) ?>" data-toggle="collapse">
+                  <img class="card-img" src="<?php echo $recipe['path']; ?>" alt="Card image heros">  
+                </a>
+              </div>
+  
+              <div id="<?php print_r($incrementIdString . strval($incrementIdInt)) ?>"class="collapse" >
+                <div class="card-body">
+                  <p class="descriptionCarte"><b><?php echo $recipe['description']; ?></b></p>
                 </div>
-    
-                <div id="<?php print_r($incrementIdString . strval($incrementIdInt)) ?>"class="collapse" >
-                  <div class="card-body">
-                    <p class="descriptionCarte"><b><?php echo $recipe['description']; ?></b></p>
-                  </div>
-                  <div class="card-footer text-muted">
-                    <a class="lienCarte" href="<?php echo $recipe['lien']; ?>">Plus d'info</a>
-                  </div>
+                <div class="card-footer text-muted">
+                  <a class="lienCarte" href="<?php echo $recipe['lien']; ?>">Plus d'info</a>
                 </div>
               </div>
             </div>
-            <?php 
-              $incrementIdInt = $incrementIdInt + 1;
+          </div>
+          <?php 
+          $incrementIdInt = $incrementIdInt + 1;
         }
         ?>
     </div>
